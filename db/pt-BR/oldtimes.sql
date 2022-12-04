@@ -11652,7 +11652,7 @@ CREATE TABLE IF NOT EXISTS `produce_db` (
   `RequireSkill` smallint unsigned NOT NULL,
   `RequireSkillLv` tinyint NOT NULL,
   `MaterialID1` smallint unsigned DEFAULT NULL,
-  `MaterialAmount1` tinyint DEFAULT NULL,
+  `MaterialAmount1` smallint(6) NOT NULL default '0',
   `MaterialID2` smallint unsigned DEFAULT NULL,
   `MaterialAmount2` tinyint DEFAULT NULL,
   `MaterialID3` smallint unsigned DEFAULT NULL,
